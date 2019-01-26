@@ -1,0 +1,72 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	position: relative;
+	width: 1200px;
+	height: 300px;
+	margin: 180px auto;
+}
+.container .box{
+	position: relative;
+	height: calc(300px - 30px);
+	width: calc(400px - 30px);
+	background-color: #000;
+	float: left;
+	margin: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.container .box .icon{
+	background-color: #f00;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	position: absolute;
+	left: 0;
+	transition: 0.5s;
+	z-index: 1;
+}
+.container .box:hover .icon{
+	top: 20px;
+	left: calc(50% - 40px);
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.container .box .icon .fa{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	font-size: 80px;
+	color: #fff;
+	transition: 0.5s;
+}
+.container .box:hover .icon .fa{
+	font-size: 40px;
+}
+.container .box .content{
+	color: #fff;
+	transition: 0.5s;
+	padding: 20px;
+	position: absolute;
+	top: 100%;
+	height: calc(100% - 100px);
+	text-align: center;
+	box-sizing: border-box;
+}
+.container .box .content h3{
+	font-size: 24px;
+	margin: 0;
+	padding: 0;
+}
+.container .box .content p{
+	margin: 0;
+	padding: 0;
+}
+.container .box:hover .content{
+	top: 100px;
+}
